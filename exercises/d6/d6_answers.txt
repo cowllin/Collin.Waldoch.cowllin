@@ -1,0 +1,42 @@
+E1: Git Research
+
+1. What does the 'git init' command do?
+	The 'init' stands for initialize, which makes this command more intuitive. 'git init' creates an empty git repository. This repository becomes the home base for a file of code (I think?)
+
+2. What does 'git add' do? How is it different from 'git commit'?
+	'git add' is a way to propose changes to a repository by sending your changes in the working directory to a 'staging platform' which is an 'index'. 'git commit' is like an extra step of saying you definitely want to make these changes, and it adds the updates to the 'head' but it's not present in the remote repository yet.
+
+3. What is the difference between 'staged' and 'committed' files?
+	Staging something basically tells git to start tracking what you've done to a file so that it can get ready to take a snapshot of the file and 'commit' it to memory.
+
+4. What's the shortcut for adding all files and committing them?
+	'git add -A && git commit' would add all files and commit them (including newly created [not just modified] files). 'git commit -am' "<commit message>" would add and commit all modified files but not newly created files.
+
+5. How do you unstage a staged file? How do you go back to an old version of a committed file?
+	 First off I could run 'git status' to check what state files are in and it should give me instructions on how to move them. 'git reset HEAD -- path/to/file' should aso be able to unstage files for me one at a time. To return to an old version of the file, I'll first use 'git log path/to/file' to find the old version to which I'd like to revert. Once finding the version I want to use, I can use 'git checkout <commit> path/to/file' then I commit the modification by using 'git commit' again.
+
+6. Why are commit messages very important?
+	Nothing is officially saved into my local repository unless it is committed. So the only way I can revert to an old version or access the history of my files is by committing changes I make. In addition, I can't push my files to a remote repository unless I have first committed the changes to my local repository.
+
+7. How do I revert to a previous commit (i.e. go back to an earlier "draft")?
+	I thought I answered this in the second half of Q5. Pasting my answer here...but maybe they aren't asking the same thing, in which case I do not fully understand this concept at all.	. . . To return to an old version of the file, I'll first use 'git log path/to/file' to find the old version to which I'd like to revert. Once finding the version I want to use, I can use 'git checkout <commit> path/to/file' then I commit the modification by using 'git commit' again.
+
+8. How do you exit out of 'vi'? (Also called 'vim'.)
+	On Windoes, I need to press ESC to exit the edition mode and then type ':wq' to quit.
+
+E2: GitHub Research?
+
+1. What's the difference between GitHub and git? Could git exist without GitHub? Could GitHub exist without git?
+	My understanding (without further research, admittedly) is that GitHub is an online portal to safeguard the important work that git enables (saving modifications and version history of coding files). Git could exist without GitHub but it would only be storing various versions on a remote repository. Helpful, but not so much when the machine has mechanical issues. GitHub could not really exist without git unless there was a separate protocol for updating file modifications.
+
+2. Why is GitHub a cool company?
+	Because they push so strongly for open source code through their communications, design, pricing model, etc. Open source makes programming a more open community.
+
+3. What does 'git push' do?
+	Push allows changes that have been committed to be moved onto another branch, usually a remote repository such as GitHub.
+
+4. What does 'git pull' do? How is it different from/same as 'git fetch' and 'git merge'?
+	
+
+
+

@@ -1,0 +1,2 @@
+def twist(message)
+	
